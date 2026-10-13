@@ -3,41 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal website of Abhinav Bulusu, an Electrical and Computer Engineering student at UT Austin. About me, projects, and contact links.">
-    <title>Abhinav Bulusu</title>
+    <meta name="description" content="Abhinav Bulusu is an Electrical and Computer Engineering student at UT Austin and software engineer with internship experience at Pinterest and PwC, building backend systems, ML pipelines, and full-stack apps.">
+    <meta name="author" content="Abhinav Bulusu">
+    <title>Abhinav Bulusu | Software Engineer</title>
+    <link rel="icon" href="avatar.svg" type="image/svg+xml">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div id="header">
-        <img src="https://github.com/abhinavbulusu.png" alt="Profile picture of Abhinav Bulusu" class="profile-pic">
-        <h1>Abhinav Bulusu</h1>
-        <p class="tagline">ECE student at The University of Texas at Austin</p>
+    <!-- Navigation -->
+    <div id="nav">
+        <div class="nav-inner">
+            <a href="#top" class="brand">Abhinav Bulusu</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
     </div>
 
-    <div class="section">
-        <h2>About Me</h2>
-        <p>
-            Hi! I'm an Electrical and Computer Engineering student at UT Austin interested in
-            software engineering, web development, and building tools that make life easier.
-        </p>
+    <!-- Hero -->
+    <div id="top" class="hero">
+        <img src="avatar.svg" alt="Abhinav Bulusu" class="profile-pic">
+        <div class="hero-text">
+            <p class="eyebrow">Hi, I'm</p>
+            <h1>Abhinav Bulusu</h1>
+            <p class="lead">
+                Electrical &amp; Computer Engineering student at
+                <strong>UT Austin</strong> building backend systems, ML pipelines,
+                and full-stack products.
+            </p>
+            <div class="button-row">
+                <a href="https://www.linkedin.com/in/abhinav-bulusu/" target="_blank" rel="noopener" class="button primary">LinkedIn</a>
+                <a href="https://github.com/abhinavbulusu" target="_blank" rel="noopener" class="button">GitHub</a>
+                <a href="mailto:abhinav.bulusu@utexas.edu" class="button">Email</a>
+            </div>
+        </div>
     </div>
 
-    <div class="section">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Hardware Allocator</strong> &ndash; a team web app (React + Python) for checking hardware in and out of projects, built for EE461L.</li>
-            <li><strong>Personal Website</strong> &ndash; this site, built with plain HTML and CSS and hosted on GitHub Pages.</li>
-        </ul>
+    <div class="container">
+        <!-- Quick stats -->
+        <div class="stats">
+            <div class="stat"><span class="stat-number">4</span><span class="stat-label">SWE roles</span></div>
+            <div class="stat"><span class="stat-number">3.7</span><span class="stat-label">GPA</span></div>
+            <div class="stat"><span class="stat-number">2,300+</span><span class="stat-label">events on Longhorn Loop</span></div>
+            <div class="stat"><span class="stat-number">3&times;</span><span class="stat-label">throughput gain at Mercor</span></div>
+        </div>
+
+        <!-- About -->
+        <div id="about" class="section">
+            <h2>About</h2>
+            <p>
+                I'm a B.S. Electrical and Computer Engineering student at The University of Texas at Austin
+                (minor in Business, class of 2028). I like working close to the systems layer &mdash;
+                service frameworks, performance tuning, and data pipelines &mdash; and turning that into
+                products people actually use.
+            </p>
+            <p>
+                Most recently I was a Software Engineering Intern at <strong>Pinterest</strong>, and I'm
+                currently a Software Engineering Intern at <strong>PwC</strong>. I also do machine learning
+                research at the <strong>Texas Space Laboratory</strong>.
+            </p>
+        </div>
+
+        <!-- Experience -->
+        <div id="experience" class="section">
+            <h2>Experience</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>PricewaterhouseCoopers (PwC)</h3>
+                    <span class="date">Fall 2026</span>
+                </div>
+                <p class="role">Software Engineering Intern &middot; Austin, TX</p>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Pinterest</h3>
+                    <span class="date">May 2026 &ndash; Aug 2026</span>
+                </div>
+                <p class="role">Software Engineering Intern &middot; Palo Alto, CA</p>
+                <ul>
+                    <li>Designed a Core Services MCP framework standardizing lifecycle hooks, auth propagation, and logging/metrics interfaces.</li>
+                    <li>Quantified queue performance with MCP tools aggregating Statsboard, Kibana, and PinCompute data into Core Services schemas.</li>
+                    <li>Migrated Core Services scripts into MCP-compliant tools, centralizing cross-cutting concerns and adding retry/backoff.</li>
+                    <li>Integrated the Thrift-based Pacer Config Server with Bazel build targets across MCP services, <strong>reducing latency 30%</strong>.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Mercor</h3>
+                    <span class="date">Apr 2026 &ndash; Present</span>
+                </div>
+                <p class="role">Software Engineer (Contract) &middot; Remote</p>
+                <ul>
+                    <li>Engineered runtime and compiler-level optimizations across C++ and Python modules.</li>
+                    <li>Profiled workloads and applied SIMD vectorization and multi-threading for a <strong>3&times; throughput increase</strong>.</li>
+                    <li>Built stress-testing harnesses that audit concurrent systems for race conditions, memory leaks, and cache stalls.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Texas Space Laboratory, UT Austin</h3>
+                    <span class="date">Feb 2025 &ndash; Present</span>
+                </div>
+                <p class="role">Undergraduate Machine Learning Research Assistant &middot; Austin, TX</p>
+                <ul>
+                    <li>Engineered Python pipelines to extract and analyze 2,000+ multispectral Sentinel-2 images via Copernicus APIs.</li>
+                    <li>Benchmarked transformer models, including OneFormer, for payload segmentation under hardware constraints.</li>
+                    <li>Integrated payload software with NVIDIA Jetson and Redwire hardware for real-time data acquisition.</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>Oleeo Inc</h3>
+                    <span class="date">Apr 2024 &ndash; Jul 2024</span>
+                </div>
+                <p class="role">Software Engineering Intern &middot; Austin, TX</p>
+                <ul>
+                    <li>Built a supervised PyTorch model for automated customer feedback classification at scale.</li>
+                    <li>Fine-tuned GPT-based LLMs for sentiment analysis, reaching <strong>92% accuracy</strong>.</li>
+                    <li>Developed Tableau dashboards that drove a 15% improvement in campaign targeting precision.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Longhorn Loop</h3>
+                    <p class="date">Jun 2025 &ndash; Present</p>
+                    <p>
+                        Full-stack event platform aggregating 2,300+ UT Austin events. REST API built with
+                        Hono on Cloudflare Workers and D1 (SQLite), with JWT auth and 2FA via Resend. A
+                        TypeScript scraper pipeline handles batched upserts and deduplication, backed by 56 Vitest tests.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">TypeScript</span><span class="tag">Hono</span><span class="tag">Node.js</span><span class="tag">SQLite</span><span class="tag">Cloudflare</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Climate Risk Analysis Platform</h3>
+                    <p class="date">Aug 2025 &ndash; Nov 2025</p>
+                    <p>
+                        Java application for climate risk prediction analyzing 1M+ historical data points daily.
+                        Python ETL pipeline cut processing time by 40%; real-time models deployed on AWS SageMaker
+                        with 500K+ records in S3 and insights in QuickSight.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">Java</span><span class="tag">Python</span><span class="tag">AWS</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Hardware Allocator</h3>
+                    <p class="date">EE461L &middot; Fall 2026</p>
+                    <p>
+                        Team web app for creating projects and checking hardware sets in and out. Frontend in
+                        React with Material UI, backed by a Python API.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">React</span><span class="tag">Material UI</span><span class="tag">Python</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>This Website</h3>
+                    <p class="date">EE461L &middot; Fall 2026</p>
+                    <p>
+                        Hand-written HTML and CSS with no JavaScript or frameworks: responsive layout,
+                        automatic dark mode, and hosted on GitHub Pages.
+                    </p>
+                    <div class="tags">
+                        <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">GitHub Pages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skill-group">
+                <h3>Languages</h3>
+                <div class="tags">
+                    <span class="tag">Python</span><span class="tag">Java</span><span class="tag">C</span><span class="tag">C++</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">Swift</span><span class="tag">PHP</span><span class="tag">SQL</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3>Frameworks</h3>
+                <div class="tags">
+                    <span class="tag">React</span><span class="tag">Next.js</span><span class="tag">Node.js</span><span class="tag">Flask</span><span class="tag">FastAPI</span><span class="tag">Django</span><span class="tag">Tailwind CSS</span><span class="tag">Firebase</span><span class="tag">JUnit</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3>ML &amp; Data</h3>
+                <div class="tags">
+                    <span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">scikit-learn</span><span class="tag">OpenCV</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">SciPy</span><span class="tag">Tableau</span>
+                </div>
+            </div>
+            <div class="skill-group">
+                <h3>Cloud &amp; Tools</h3>
+                <div class="tags">
+                    <span class="tag">AWS</span><span class="tag">Google Cloud</span><span class="tag">Docker</span><span class="tag">PostgreSQL</span><span class="tag">Git</span><span class="tag">Bazel</span><span class="tag">Thrift</span><span class="tag">TravisCI</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education & Honors -->
+        <div id="education" class="section">
+            <h2>Education &amp; Honors</h2>
+            <div class="job">
+                <div class="job-header">
+                    <h3>The University of Texas at Austin</h3>
+                    <span class="date">Expected May 2028</span>
+                </div>
+                <p class="role">B.S. Electrical and Computer Engineering, Minor in Business &middot; GPA 3.7/4.0</p>
+            </div>
+            <ul class="honors">
+                <li><strong>Scott Cook &amp; Signe Ostby Scholarship</strong> &mdash; Fall 2025, Spring 2026, Fall 2026</li>
+                <li><strong>Halliburton Scholar Distinction</strong> &mdash; Summer 2025</li>
+                <li><strong>Y Combinator Startup School</strong> &mdash; Summer 2026</li>
+                <li><strong>Citi Software Development Job Simulation</strong> &mdash; 2025</li>
+                <li><strong>Artificial Intelligence, Stanford Pre-Collegiate</strong> &mdash; 2022</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div id="contact" class="section contact">
+            <h2>Let's connect</h2>
+            <p>I'm always happy to talk about software engineering roles, research, or interesting projects.</p>
+            <div class="button-row">
+                <a href="mailto:abhinav.bulusu@utexas.edu" class="button primary">abhinav.bulusu@utexas.edu</a>
+                <a href="https://www.linkedin.com/in/abhinav-bulusu/" target="_blank" rel="noopener" class="button">LinkedIn</a>
+                <a href="https://github.com/abhinavbulusu" target="_blank" rel="noopener" class="button">GitHub</a>
+            </div>
+        </div>
     </div>
 
-    <div class="section">
-        <h2>Find Me Online</h2>
-        <p>
-            <a href="https://github.com/abhinavbulusu" target="_blank" rel="noopener">GitHub</a> &middot;
-            <a href="https://www.utexas.edu" target="_blank" rel="noopener">UT Austin</a>
-        </p>
+    <div id="footer">
+        <p>&copy; 2026 Abhinav Bulusu &middot; Built with plain HTML &amp; CSS &middot; Hosted on GitHub Pages</p>
     </div>
-
-    <p class="tagline footer">&copy; 2026 Abhinav Bulusu</p>
 </body>
 </html>
